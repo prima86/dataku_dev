@@ -1,0 +1,204 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "DATAKU API Documentation",
+        "version": "1.0"
+    },
+    "paths": {
+        "/api/dss/kode_tabel": {
+            "get": {
+                "tags": [
+                    "Kode tabel"
+                ],
+                "summary": "( API Get Kode Tabel )",
+                "description": "Kode Tabel Statistik Sektoral",
+                "operationId": "get_kode_tabel",
+                "responses": {
+                    "200": {
+                        "description": "Data ditemukan"
+                    }
+                }
+            }
+        },
+        "/api/dss/{kode_tabel}": {
+            "get": {
+                "tags": [
+                    "Tabel data"
+                ],
+                "summary": "( API Get Data, [parameter : kode_tabel] )",
+                "description": "Request data by kode_tabel",
+                "operationId": "get_data_param",
+                "parameters": [
+                    {
+                        "name": "kode_tabel",
+                        "in": "path",
+                        "description": "masukkan kode tabel",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Data ditemukan"
+                    },
+                    "404": {
+                        "description": "Data tidak ditemukan"
+                    }
+                }
+            }
+        },
+        "/api/dss/{kode_tabel}/{tahun}": {
+            "get": {
+                "tags": [
+                    "Tabel data"
+                ],
+                "summary": "( API Get Data, [parameter : kode_tabel, tahun_data] )",
+                "description": "Request data by kode tabel, tahun data",
+                "operationId": "get_data_param_kode_tahun",
+                "parameters": [
+                    {
+                        "name": "kode_tabel",
+                        "in": "path",
+                        "description": "masukkan kode tabel",
+                        "required": true
+                    },
+                    {
+                        "name": "tahun",
+                        "in": "path",
+                        "description": "masukkan tahun data",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Data ditemukan"
+                    },
+                    "404": {
+                        "description": "Data tidak ditemukan"
+                    }
+                }
+            }
+        },
+        "/api/kode_kelurahan": {
+            "get": {
+                "tags": [
+                    "Tabel kode referensi"
+                ],
+                "summary": "(API Get Kode Kelurahan)",
+                "description": "Kode Kelurahan",
+                "operationId": "get_kode_kelurahan",
+                "responses": {
+                    "200": {
+                        "description": "Data ditemukan"
+                    },
+                    "404": {
+                        "description": "Data tidak ditemukan"
+                    }
+                }
+            }
+        },
+        "/api/kode_kecamatan": {
+            "get": {
+                "tags": [
+                    "Tabel kode referensi"
+                ],
+                "summary": "(API Get Kode Kecamatan)",
+                "description": "Kode Kecamatan",
+                "operationId": "get_kode_kecamatan",
+                "responses": {
+                    "200": {
+                        "description": "Data ditemukan"
+                    },
+                    "404": {
+                        "description": "Data tidak ditemukan"
+                    }
+                }
+            }
+        },
+        "/api/kode_opd": {
+            "get": {
+                "tags": [
+                    "Tabel kode referensi"
+                ],
+                "summary": "(API Get Kode OPD)",
+                "description": "Kode OPD",
+                "operationId": "get_kode_opd",
+                "responses": {
+                    "200": {
+                        "description": "Data ditemukan"
+                    },
+                    "404": {
+                        "description": "Data tidak ditemukan"
+                    }
+                }
+            }
+        },
+        "/api/kode_golongan_asn": {
+            "get": {
+                "tags": [
+                    "Tabel kode referensi"
+                ],
+                "summary": "(API Get Kode Golongan ASN)",
+                "description": "Kode Golongan ASN",
+                "operationId": "get_kode_golongan_asn",
+                "responses": {
+                    "200": {
+                        "description": "Data ditemukan"
+                    },
+                    "404": {
+                        "description": "Data tidak ditemukan"
+                    }
+                }
+            }
+        },
+        "/api/kode_agama": {
+            "get": {
+                "tags": [
+                    "Tabel kode referensi"
+                ],
+                "summary": "(API Get Kode Agama)",
+                "description": "Kode Agama",
+                "operationId": "get_kode_agama",
+                "responses": {
+                    "200": {
+                        "description": "Data ditemukan"
+                    },
+                    "404": {
+                        "description": "Data tidak ditemukan"
+                    }
+                }
+            }
+        },
+        "/api/kode_bulan": {
+            "get": {
+                "tags": [
+                    "Tabel kode referensi"
+                ],
+                "summary": "(API Get Kode Bulan)",
+                "description": "Kode Bulan",
+                "operationId": "get_kode_bulan",
+                "responses": {
+                    "200": {
+                        "description": "Data ditemukan"
+                    },
+                    "404": {
+                        "description": "Data tidak ditemukan"
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Kode tabel",
+            "description": "Kode tabel"
+        },
+        {
+            "name": "Tabel data",
+            "description": "Tabel data"
+        },
+        {
+            "name": "Tabel kode referensi",
+            "description": "Tabel kode referensi"
+        }
+    ]
+}
