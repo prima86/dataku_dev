@@ -1,0 +1,106 @@
+body {
+  background-color: #222222 !important;
+  color:#fff !important;
+}
+pre{
+  background-color: #222222 !important;
+  color:#fff !important;
+}
+div.card{
+  background-color: #222222;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+div.card-body{
+  background-color: #222222;
+  color: #fff;
+}
+div.card-header{
+  background-color: #3f3d3d;
+  color: #fff;
+}
+div.dss-card-dashboard{
+  box-shadow: 2px 2px 2px #3f3f45 !important;
+}
+div.dss-card-dashboard > div.card-header{
+  background:rgba(0,0,0,0.35);
+}
+div.dss-card-dashboard > div.card-body{
+  background:rgba(0,0,0,0.25);
+}
+div.alert.alert-warning.night-mode-notification{
+  background-color: #6C757D;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.dropdown-menu,.dropdown-item{
+  background-color: #222222;
+  color: #fff !important;
+}
+.dropdown-menu{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-toggler{
+  background-color: #fff3;
+}
+.dropdown-item:hover{
+  background-color: #3F3D3D;
+  color: #fff !important;
+}
+li.top-menu > div.dropdown-menu > a.dropdown-item{
+  background-color: #007BFF !important;
+}
+li.top-menu > div.dropdown-menu > a.dropdown-item:hover{
+  background-color: #3F3D3D !important;
+}
+
+/* dss tree */
+ul#tree > li > ul{
+  background-color: #222222;
+  /* color: #fff; */
+}
+div#nav-logo-menu{
+  background-color: #141418  !important;
+}
+footer#footer{
+  background-color: #141418  !important;
+  color           : #fff;
+}
+/* breadcrumb */
+ol.breadcrumb{
+  background-color: #3f3d3d  !important;
+}
+/* form */
+.form-control,.file-caption-name{
+  background-color: #222222 !important;
+  color: #fff !important;
+}
+/*defalult select*/
+select{background-color: #222222 !important; color:#fff !important;}
+/* select2 */
+.select2-search, .select2-search input , .select2-results, .select2-selection,.select2-selection__rendered { background-color: #222222 !important; color:#fff !important;}
+/*table*/
+tr.bg-soft-blue, tr.bg-soft-blue > td{
+  background-color: #2f365b !Important;
+}
+.bg-soft-red,tr.bg-soft-red, tr.bg-soft-red > td{
+  background-color: #561111 !Important;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: #3f3d3d;
+}
+/* .table-striped > tbody > tr.bg-soft-blue:nth-child(2n+1), .table-striped > tbody > tr:nth-child(2n+1) > th.bg-soft-blue {
+   background-color: red;
+} */
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #2f365b;
+}
+
+/* modal or boot box*/
+.modal-content{
+  background-color: #222222;
+  color:#fff;
+}
